@@ -1,0 +1,149 @@
+body {
+  background: url(./images/bg-mobile.png) no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.icons {
+  display: flex;
+  margin-top: 1.25rem;
+}
+.icond,
+.iconf,
+.iconu {
+  background-color: hsl(229, 57%, 11%);
+  margin-right: 0.9375rem;
+  padding: 0.625rem 0.9375rem;
+}
+.iconf {
+  padding-top: 0.875rem;
+}
+.iconu {
+  padding-top: 1.125rem;
+}
+header,main,.left,.mainBar,.bar,.ball,.icond,.iconf,.iconu{
+    border-radius: 0.625rem;
+}
+header {
+  background-color: hsl(228, 56%, 26%);
+  padding: 2.5rem 4.375rem 2.5rem 2.5rem;
+  border-top-right-radius: 6.25rem;
+  margin-top: 6.25rem;
+}
+main {
+  background-color: hsl(228, 56%, 26%);
+  margin-top: 0.9375rem;
+  color: hsl(243, 100%, 93%);
+  display: grid;
+  justify-content: center;
+  padding: 1.25rem 0.625rem 1.875rem 0.625rem;
+  margin-bottom: 5rem;
+}
+main span {
+  font-weight: 700;
+}
+.left {
+  background-color: white;
+  color: hsl(229, 7%, 55%);
+  width: max-content;
+  padding: 0.625rem 1.25rem;
+  font-size: x-small;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  bottom: -7.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left span {
+  color: hsl(229, 57%, 11%);
+  font-size: xx-large;
+  margin-right: 5px;
+}
+.allBar {
+  margin-top: -3.75rem;
+}
+.mainBar {
+  background-color: hsla(229, 57%, 11%, 0.5);
+  height: 1rem;
+  width: 100%;
+  padding: 0.0625rem;
+}
+.bar {
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  height: 0.875rem;
+  width: 70%;
+  padding: 0.0625rem;
+}
+.ball {
+  background-color: white;
+  height: 0.75rem;
+  width: 0.75rem;
+  margin: 0.0625rem 0.0313rem 0.0625rem auto;
+}
+.gb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gb p {
+  margin-top: 0.625rem;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    background: url(./images/bg-desktop.png) no-repeat;
+       background-color:hsl(229, 57%, 11%) ;
+       background-attachment:fixed ;
+       background-position: bottom;
+       background-size: contain;
+       grid-template-areas:
+      "hd ma"
+      "f f";
+  }
+  header {
+    grid-area: hd;
+    height: max-content;
+    margin-top: 8.8125rem;
+    margin-right: 1rem;
+  }
+  main {
+    grid-area: ma;
+    margin: 12.0625rem 1rem 0rem 0.625rem;
+    padding: 1.25rem 1.875rem;
+    height: fit-content;
+  }
+
+  footer {
+    grid-area: f;
+    position: relative;
+    bottom: -150px;
+  }
+  .mainBar {
+    width: 25rem;
+  }
+  .left {
+    bottom: 2.8125rem;
+    right: -7.9375rem;
+    border-bottom-right-radius: 0rem;
+  }
+  .triangle {
+    background-image: linear-gradient(45deg, hsl(228, 56%, 26%) 50%, white 50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    position: relative;
+    bottom: 2.8125rem;
+    right: -23.73rem;
+  }
+  .mainBar {
+    margin-top: -1.5rem;
+  }
+}
